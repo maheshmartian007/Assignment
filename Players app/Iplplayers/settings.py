@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project7.urls'
+ROOT_URLCONF = 'Iplplayers.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project7.wsgi.application'
+WSGI_APPLICATION = 'Iplplayers.wsgi.application'
 
 
 # Database

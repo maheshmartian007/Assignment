@@ -54,7 +54,7 @@ def update_resource_completely(id):
 	iplteam = input('Enter the iplteam of the Player:\t')
 	player_data = {'id':id,'jersyno':jersyno,'name':name,'age':age,'iplteam':iplteam}
 	
-	response = requests.put(BASE_URL+END_POINT,data=json.dumps(update_data))
+	response = requests.put(BASE_URL+END_POINT,data=json.dumps(player_data))
 	print(response.json())
 	print(response.status_code)
 
@@ -79,7 +79,7 @@ def delete_resource(id):
 
 # delete_resource(2)
 
-print('Please select the below operations \n 1. CREATE the data \n 2. SELECT Single data \n 3. SELECT Complete data \n 4. UPDATE partially \n 5. UPDATE Completly \n 6. DELETE the data'
+print('Please select the below operations \n 1. CREATE the data \n 2. SELECT Single data \n 3. SELECT Complete data \n 4. UPDATE completely \n 5. UPDATE Partially \n 6. DELETE the data'
 )
 
 option = int(input('Enter the option:\t'))
